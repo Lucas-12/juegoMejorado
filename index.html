@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuestionario</title>
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Fonts Google-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/296ea6cf27.js"></script>
+
+</head>
+<body>
+    <div class="titular">
+        <span><h1>Preguntanding</h1></span>
+    </div>
+    <div class="cuestionario">
+        
+        <div class="cajaPregunta">
+            <h3 class="pregunta" id="pregunta">¿Cuál de los siguientes deportistas NO ha sido futbolista?</h3>
+            
+            <div class="respuestas"><p class="res" id="res1"> 1. Ruben Baraja </p>
+                <p class="res" id="res2">2. Thierry Henry </p>
+                <p class="res" id="res3"> 3. Rubens Barrichello </p>
+                <p class="res" id="res4"> 4. David Beckham </p></div>
+
+            <div class="cajaBotones"></div>
+                <p class="txtRespuesta">Elegi tu respuesta y toca el numero que le corresponda:</p>
+                <p>
+                <button class="previous"><i class="fas fa-chevron-circle-left"></i></button>
+                <input type="button" value="1" name='incorrecto' class="option">
+                <input type="button" value="2" name='incorrecto' class="option">
+                <input type="button" value="3" name='correcto' class="option">
+                <input type="button" value="4" name='incorrecto' class="option">
+                <button class="next"><i class="fas fa-chevron-circle-right"></i></button></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>

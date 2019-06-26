@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: #3494E6; 
+    background: -webkit-linear-gradient(to left, rgb(243, 201, 222), #3494E6); 
+    background: linear-gradient(to left, rgb(229, 196, 213), #3494E6); 
+    font-family: 'Courgette', cursive;
+}
+
+.titular{
+    
+    background: white;
+    background-image: url(img/signo2.png);
+    height: 90px;
+    width: 35%;
+    margin: auto;
+    border-radius: 20%;
+    box-shadow: 2px 2px 0 #AAA, 6px 6px 2px #777, 12px 12px 8px #444;
+    text-shadow: 2px 2px 0 white, 6px 6px 2px #777, 12px 12px 8px rgb(117, 116, 116);
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    padding-top: 0.5%;
+    font-size: 2rem;
+}
+
+.cuestionario{
+    background: white;
+    background-image: url(img/signo23.png);
+    height: 455px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20%;
+    box-shadow: 2px 2px 0 #AAA, 6px 6px 2px #777, 12px 12px 8px #444;
+}
+
+.cajaPregunta{ 
+    margin: auto;
+    width: 80%;
+    height: 460px;
+    text-shadow: 2px 2px 0 white, 6px 6px 2px #777, 12px 12px 8px rgb(117, 116, 116);
+}
+
+.pregunta{
+    padding-top: 6%;
+    font-size: 2em;
+}
+
+.respuestas{
+    padding-top: 2%;
+    margin-bottom: 3%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.respuestas .res{
+    padding-top: 2%;
+}
+
+.txtRespuesta{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 3%;
+    width: 90px;
+    height: 30px;
+    margin-right: 5%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50%;
+/*    box-shadow: 2px 2px 0 #AAA, 12px 8px 8px #444;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: rgb(14, 13, 13);*/
+    color: white;
+    background-color: rgba(10, 9, 9, 0.8);
+    box-shadow: 4px 4px 2px rgb(56, 56, 56), 12px 12px 8px rgb(10, 4, 4);
+}
+
+.previous{
+    font-size: 2.7rem;
+    margin-left: -1%;
+    margin-right: 11%;
+    color: /*rgb(199, 34, 34)*/black;
+    text-shadow: 2px 2px 0 #AAA;
+    opacity: 0.80;    
+    background-color: rgba(131, 5, 5, 0);
+    box-shadow: 6px 6px 2px rgb(56, 56, 56), 12px 12px 8px rgb(10, 4, 4);
+    border-radius: 50%;
+}
+
+.next{
+    font-size: 2.7rem;
+    margin-left: 7%;
+    color: /*rgb(199, 34, 34)*/black;
+    text-shadow: 2px 2px 0 #AAA;
+    opacity: 0.80;    
+    background-color: rgba(131, 5, 5, 0);
+    box-shadow: 6px 6px 2px rgb(56, 56, 56), 12px 12px 8px rgb(10, 4, 4);
+    border-radius: 50%;
+}
+
+
+@media (max-width: 360px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background: #3494E6; 
+        background: -webkit-linear-gradient(to left, rgb(243, 201, 222), #3494E6); 
+        background: linear-gradient(to left, rgb(229, 196, 213), #3494E6); 
+        font-family: 'Courgette', cursive;
+    }
+    
+    .cajaPregunta{
+        border-radius: 60%;
+        background-image: url(img/signo2.png); 
+        background-color: white;
+        margin: auto;
+        width: 80%;
+        height: 50%;
+        
+    }
+    
+    .cuestionario{
+        background:grey;
+        font-size: 0.5rem;
+        height: 70%;
+        width: 70%;
+        margin: auto;
+        border-radius: 20%;
+    }    
+}
+
+
