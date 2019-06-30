@@ -13,6 +13,7 @@ function siResMal(){
     for(let i=0; i<mal.length; i++){
     mal[i].addEventListener('click', respondioMal);
     mal[i].addEventListener('click', siguientePregunta);
+
     }
 }
 
@@ -20,23 +21,21 @@ function siResBien(){
     for(let i=0; i<bien.length; i++){
         bien[i].addEventListener('click', respondioBien);
         bien[i].addEventListener('click', siguientePregunta);
+
     }
 }
 
  function respondioBien(){
     puntos += 10;
     pregunta +=1;
-    alert('Respondiste BIEN! Tenes ' + puntos + ' puntos.');
 }
 
 function respondioMal(){
     pregunta +=1;
-    alert('Respondiste MAL! Tenes ' + puntos + ' puntos.');
-    
 }
 
 
-function preguntar(preg, op1, op2, op3, op4, num){
+function preguntar(preg, op1, op2, op3, op4){
 
     document.getElementById("pregunta").innerHTML = preg;
     document.getElementById("res1").innerHTML = op1;
@@ -44,15 +43,36 @@ function preguntar(preg, op1, op2, op3, op4, num){
     document.getElementById("res3").innerHTML = op3;
     document.getElementById("res4").innerHTML = op4;
 
-    respuestaCorrecta(num-1);
 }
 
-function respuestaCorrecta(num){
-    
-    for(let i=0; i<arrRes.length; i++){
-        arrRes[i].setAttribute("name", "incorrecto");
-    }   
-    arrRes[num].setAttribute("name", "correcto");
+function resCorrecta(num){
+    alert("La respuesta correcta es la " + num);
+}
+
+
+function totalPuntos(){
+    alert('En total sumaste ' + puntos + '.');
+}
+
+function decimePuntosYEliminaBotones(){
+    for(let i=0; i<mal.length; i++){
+        mal[i].addEventListener('click', totalPuntos);
+        mal[i].addEventListener('click', eliminaBotones);
+        }
+    for(let i=0; i<mal.length; i++){
+        bien[i].addEventListener('click', totalPuntos);
+        bien[i].addEventListener('click', eliminaBotones);
+    }
+}
+
+
+
+function eliminaBotones(){
+
+    var parrafo = document.getElementById("caja");
+    parrafo.parentNode.removeChild(parrafo);
+
+
 
 }
 
@@ -61,34 +81,77 @@ function respuestaCorrecta(num){
 function siguientePregunta(){
     switch(pregunta){
         case 1: 
-            preguntar("¿Cual de los siguientes animales vive mas años?", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("¿Cual de los siguientes animales vive mas años?", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[1].setAttribute('name', 'correcto');
+            arrRes[2].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
             break;
         case 2:
-            preguntar("Cuantos aloskdsk", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("Cuantos aloskdsk", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[3].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(4);
             break;
         case 3:
-            preguntar("dsfgdfgfdgfdg", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("aaaa", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[2].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
             break;
         case 4:
-            preguntar("dsfgdfgfdgfdg", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("gggggggg", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[2].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
         break;
         case 5:
-            preguntar("dsfgdfgfdgfdg", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("llllllll", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[2].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
         break;
         case 6:
-            preguntar("dsfgdfgfdgfdg", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("eeeeeee", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[2].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
         break;
         case 7:
-            preguntar("dsfgdfgfdgfdg", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("kkkkkkkk", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[2].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
         break;
         case 8:
-            preguntar("dsfgdfgfdgfdg", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma", 1);
+            preguntar("qAAAAqqqqqq", "1. Vaca", "2. Elefante", "3. Gato", "4. Paloma");
+            arrRes[2].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
         break;
         case 9:
-            preguntar("aaaaaaaaaaaaaaa", "1. Vacaaaaaaaaaa", "2. Eleaaaaaaafante", "3. Gato", "4. Paloma", 1);
-        break;
-        case 10:
-            termino();// falta definir
+            preguntar("aaaaaaaaaaaaaaa", "1. Vacaaaaaaaaaa", "2. Eleaaaaaaafante", "3. Gato", "4. Paloma");
+            arrRes[2].setAttribute('name', 'correcto');
+            arrRes[1].setAttribute('name', 'incorrecto');
+            siResMal();
+            siResBien();
+            resCorrecta(3);
+            decimePuntosYEliminaBotones();
         break;
     }
 }
