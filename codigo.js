@@ -1,3 +1,5 @@
+alert('Cada respuesta correcta son 10 puntos, al final del juego vas a saber cuantos puntos sumaste. Suerte!');
+
 const bien = document.getElementsByName('correcto');
 const mal = document.getElementsByName('incorrecto');
 var arrRes = document.getElementsByClassName('option');
@@ -6,7 +8,6 @@ var pregunta = 0;
 
 siResMal();
 siResBien();
-
 
 
 function siResMal(){
