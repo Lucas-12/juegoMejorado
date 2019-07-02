@@ -1,4 +1,4 @@
-alert('Cada respuesta correcta son 10 puntos, al final del juego vas a saber cuantos puntos sumaste. Suerte!');
+//alert('Cada respuesta correcta son 10 puntos, al final del juego vas a saber cuantos puntos sumaste. Suerte!');
 
 var arrRes = document.getElementsByClassName('option');
 var puntos = 0;
